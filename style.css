@@ -1,15 +1,17 @@
 body{
     background-color:lightgreen;
     display: flex;
-     justify-content: center; 
+    justify-content: center; 
     align-content: center;
 }
+
 label{
     position: relative;
 }
 input{
     border: none;
     padding: 5px 15px;
+    height: 20px;
 }
 button{
 position: absolute;
@@ -20,4 +22,14 @@ background: lightsalmon;
 color: white;
 border: none;
 cursor: pointer;
+height: 30px;
+}
+ul{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li{
+    color: darkorchid;
+    margin-bottom: 10px;
 }

@@ -8,14 +8,24 @@
     <title>sample</title>
 </head>
 <body>
+   
     <label>
    <input id="text" placeholder="type here">
-   <button onclick="clickfunction()" id="btn1">Add</button> 
+   <button onclick="addLi()">Add</button> 
+   <ul id="list">
+<li>trial</li>
+   </ul>
 </label>
 <script>
-    function clickfunction(){
-        var str=document.getElementById("text").value;
-        console.log("the required output is:"+str);
+    function addLi(){
+        var text=document.getElementById("text").value;
+        listNode=document.getElementById("list");
+        liNode=document.createElement("LI");
+        textNode=document.createTextNode(text);
+
+        liNode.appendChild(textNode);
+        listNode.appendChild(liNode);
+
     }
 </script>
 </body>
